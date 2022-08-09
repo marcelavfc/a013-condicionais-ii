@@ -1,15 +1,26 @@
 let nacionalidade = prompt("digite aqui a nacionalidade").toLowerCase();
 
-if(nacionalidade === "brasileira"){
+switch(nacionalidade){
+    case "brasileira" || "brasileiro":
     console.log("a pessoa é do Brasil!");
-} else if(nacionalidade === "argentina"){
-    console.log("a pessoa é da Argentina!");
-} else if(nacionalidade === "uruguaia"){
+    break
+
+    case "argentina" || "argentino":
+    console.log("a pessoa é da Argentina!");  
+    break
+
     console.log("a pessoa é do Uruguai!");
-} else if(nacionalidade === "chilena"){
+    case "uruguaia" || "uruguaio":
+    break
+
     console.log("a pessoa é do Chile!");
-} else if(nacionalidade === "colombiana"){
+    case "chilena" || "chileno":
+    break
+
     console.log("a pessoa é da Colômbia!");
-} else{
+    case "colombiana" || "colombiano":
+    break
+
+    default:
     console.log("nacionalidade não encontrada")
 }
